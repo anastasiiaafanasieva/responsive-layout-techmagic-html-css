@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Layout</title>
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,114 +26,143 @@
         <section>
           <h2 class="visuallyhidden">content_images</h2>
           <div class="content__images">
-            <picture>
-              <source srcset="./images/img-l.jpeg" media="(min-width: 769px)" />
-              <source
-                srcset="./images/img-xl.jpeg"
-                media="(min-width: 1025px)"
-              />
-              <img
-                src="./images/img-s.jpeg"
-                alt="img"
-                class="content__images-picture"
-              />
-            </picture>
-            <picture>
-              <source srcset="./images/img-l.jpeg" media="(min-width: 769px)" />
-              <source
-                srcset="./images/img-xl.jpeg"
-                media="(min-width: 1025px)"
-              />
-              <img
-                src="./images/img-s.jpeg"
-                alt="img"
-                class="content__images-picture"
-              />
-            </picture>
-            <picture>
-              <source srcset="./images/img-l.jpeg" media="(min-width: 769px)" />
-              <source
-                srcset="./images/img-xl.jpeg"
-                media="(min-width: 1025px)"
-              />
-              <img
-                src="./images/img-s.jpeg"
-                alt="img"
-                class="content__images-picture"
-              />
-            </picture>
-            <picture>
-              <source srcset="./images/img-l.jpeg" media="(min-width: 769px)" />
-              <source
-                srcset="./images/img-xl.jpeg"
-                media="(min-width: 1025px)"
-              />
-              <img
-                src="./images/img-s.jpeg"
-                alt="img"
-                class="content__images-picture"
-              />
-            </picture>
-            <picture>
-              <source srcset="./images/img-l.jpeg" media="(min-width: 769px)" />
-              <source
-                srcset="./images/img-xl.jpeg"
-                media="(min-width: 1025px)"
-              />
-              <img
-                src="./images/img-s.jpeg"
-                alt="img"
-                class="content__images-picture"
-              />
-            </picture>
-            <picture>
-              <source srcset="./images/img-l.jpeg" media="(min-width: 769px)" />
-              <source
-                srcset="./images/img-xl.jpeg"
-                media="(min-width: 1025px)"
-              />
-              <img
-                src="./images/img-s.jpeg"
-                alt="img"
-                class="content__images-picture"
-              />
-            </picture>
-            <picture>
-              <source srcset="./images/img-l.jpeg" media="(min-width: 769px)" />
-              <source
-                srcset="./images/img-xl.jpeg"
-                media="(min-width: 1025px)"
-              />
-              <img
-                src="./images/img-s.jpeg"
-                alt="img"
-                class="content__images-picture"
-              />
-            </picture>
-            <picture>
-              <source srcset="./images/img-l.jpeg" media="(min-width: 769px)" />
-              <source
-                srcset="./images/img-xl.jpeg"
-                media="(min-width: 1025px)"
-              />
-              <img
-                src="./images/img-s.jpeg"
-                alt="img"
-                class="content__images-picture"
-              />
-            </picture>
-            <picture>
-              <source srcset="./images/img-l.jpeg" media="(min-width: 769px)" />
-              <source
-                srcset="./images/img-xl.jpeg"
-                media="(min-width: 1025px)"
-              />
-              <img
-                src="./images/img-s.jpeg"
-                alt="img"
-                class="content__images-picture"
-              />
-            </picture>
+            <div class="content__images__pictures-container">
+              <picture>
+                <source
+                  srcset="./images/img-cabo-de-roca-l.jpeg"
+                  media="(min-width: 769px)"
+                />
+                <source
+                  srcset="./images/img-cabo-de-roca-xl.jpeg"
+                  media="(min-width: 1025px)"
+                />
+                <img
+                  src="./images/img-cabo-de-roca-s.jpeg"
+                  alt="img-cabo-de-roca"
+                  class="content__images-picture"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="./images/img-praia-de-albandeira-l.jpeg"
+                  media="(min-width: 769px)"
+                />
+                <source
+                  srcset="./images/img-praia-de-albandeira-xl.jpeg"
+                  media="(min-width: 1025px)"
+                />
+                <img
+                  src="./images/img-praia-de-albandeira-s.jpeg"
+                  alt="img-praia-de-albandeira"
+                  class="content__images-picture"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="./images/img-ponte-da-piedade-l.jpeg"
+                  media="(min-width: 769px)"
+                />
+                <source
+                  srcset="./images/img-ponte-da-piedade-xl.jpeg"
+                  media="(min-width: 1025px)"
+                />
+                <img
+                  src="./images/img-ponte-da-piedade-s.jpeg"
+                  alt="img-ponte-da-piedade"
+                  class="content__images-picture"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="./images/img-algarve-l.jpeg"
+                  media="(min-width: 769px)"
+                />
+                <source
+                  srcset="./images/img-algarve-xl.jpeg"
+                  media="(min-width: 1025px)"
+                />
+                <img
+                  src="./images/img-algarve-s.jpeg"
+                  alt="img-algarve"
+                  class="content__images-picture"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="./images/img-cliffs-of-cabo-da-roca-l.jpeg"
+                  media="(min-width: 769px)"
+                />
+                <source
+                  srcset="./images/img-cliffs-of-cabo-da-roca-xl.jpeg"
+                  media="(min-width: 1025px)"
+                />
+                <img
+                  src="./images/img-cliffs-of-cabo-da-roca-s.jpeg"
+                  alt="img-cliffs-of-cabo-da-roca"
+                  class="content__images-picture"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="./images/img-lagos-beach-l.jpeg"
+                  media="(min-width: 769px)"
+                />
+                <source
+                  srcset="./images/img-lagos-beach-xl.jpeg"
+                  media="(min-width: 1025px)"
+                />
+                <img
+                  src="./images/img-lagos-beach-s.jpeg"
+                  alt="img-lagos-beach"
+                  class="content__images-picture"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="./images/img-praia-do-camilo-l.jpeg"
+                  media="(min-width: 769px)"
+                />
+                <source
+                  srcset="./images/img-praia-do-camilo-xl.jpeg"
+                  media="(min-width: 1025px)"
+                />
+                <img
+                  src="./images/img-praia-do-camilo-s.jpeg"
+                  alt="img-praia-do-camilo"
+                  class="content__images-picture"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="./images/img-tagus-river-l.jpeg"
+                  media="(min-width: 769px)"
+                />
+                <source
+                  srcset="./images/img-tagus-river-xl.jpeg"
+                  media="(min-width: 1025px)"
+                />
+                <img
+                  src="./images/img-tagus-river-s.jpeg"
+                  alt="img-tagus-river"
+                  class="content__images-picture"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="./images/img-azores-l.jpeg"
+                  media="(min-width: 769px)"
+                />
+                <source
+                  srcset="./images/img-azores-xl.jpeg"
+                  media="(min-width: 1025px)"
+                />
+                <img
+                  src="./images/img-azores-s.jpeg"
+                  alt="img-azores"
+                  class="content__images-picture"
+                />
+              </picture>
+            </div>
           </div>
         </section>
 
@@ -165,6 +195,7 @@
     </main>
 
     <footer>
+      <h4 class="visuallyhidden">footer</h4>
       <div class="footer footer__title">Footer</div>
     </footer>
   </body>
